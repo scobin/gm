@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chengyu.gm2.Demo3Fragment">
+
+    <TextView
+        android:id="@+id/demo3_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        tools:text="TIME" />
+
+    <TextView
+        android:id="@+id/demo3_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/demo3_target"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        tools:text="result"/>
+    <View
+        android:id="@+id/demo3_target"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#e7e7e7"
+        android:layout_centerInParent="true"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/demo3_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#ff0000"/>
+
+        <Button
+            android:id="@+id/demo3_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#00ff00"/>
+
+        <Button
+            android:id="@+id/demo3_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#0000ff"/>
+
+    </TableRow>
+
+
+</RelativeLayout>
