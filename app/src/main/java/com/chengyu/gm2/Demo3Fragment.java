@@ -1,6 +1,7 @@
 package com.chengyu.gm2;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
@@ -13,8 +14,13 @@ import android.widget.TextView;
 public class Demo3Fragment extends DemoBaseFragment implements View.OnClickListener {
 
     public static final String TAG = "Demo3Fragment";
-    private TextView mTarget;
+    private View mTarget;
     private TextView mTimeText;
+    private TextView mResult;
+    private int[] mColor = {Color.argb(255, 255, 0, 0), Color.argb(255, 0, 255, 0), Color.argb(255, 0, 0, 255)};
+    private int mColorIndex;
+    private int mClearCount = 0;
+    private boolean mOver = false;
 
     public Demo3Fragment() {
         // Required empty public constructor
@@ -42,7 +48,8 @@ public class Demo3Fragment extends DemoBaseFragment implements View.OnClickListe
         mRootView.findViewById(R.id.demo3_btn2).setOnClickListener(this);
         mRootView.findViewById(R.id.demo3_btn3).setOnClickListener(this);
         mTimeText = (TextView) mRootView.findViewById(R.id.demo3_timer);
-        mTarget = (TextView) mRootView.findViewById(R.id.demo3_result);
+        mResult = (TextView) mRootView.findViewById(R.id.demo3_result);
+        mTarget = mRootView.findViewById(R.id.demo3_target);
 
         // ready
         final Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.scale1);
@@ -59,7 +66,7 @@ public class Demo3Fragment extends DemoBaseFragment implements View.OnClickListe
             public void onFinish() {
                 mTimeText.setText("");
                 startTimer(true);
-
+                createColor();
             }
         }.start();
 
@@ -69,13 +76,47 @@ public class Demo3Fragment extends DemoBaseFragment implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        if (mOver) {
+            return;
+        }
         switch(view.getId()) {
             case R.id.demo3_btn1:
+                if (mColorIndex == 0) {
+                    mResult.setText("Correct!");
+                    createColor();
+                    mClearCount++;
+                } else {
+                    mResult.setText("Incorrect!");
+                }
                 break;
             case R.id.demo3_btn2:
+                if (mColorIndex == 1) {
+                    mResult.setText("Correct!");
+                    createColor();
+                    mClearCount++;
+                } else {
+                    mResult.setText("Incorrect!");
+                }
                 break;
             case R.id.demo3_btn3:
+                if (mColorIndex == 2) {
+                    mResult.setText("Correct!");
+                    createColor();
+                    mClearCount++;
+                } else {
+                    mResult.setText("Incorrect!");
+                }
                 break;
         }
+        if (mClearCount >= 10) {
+            stopTimer();
+            mOver = true;
+        }
+
+    }
+
+    private void createColor() {
+        mColorIndex = (int) (Math.random()*3);
+        mTarget.setBackgroundColor(mColor[mColorIndex]);
     }
 }
