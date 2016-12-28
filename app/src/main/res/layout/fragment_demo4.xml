@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/demo4_center1"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@+id/demo4_capture1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/demo4_center1"
+                android:background="#e7e7e7" />
+            <View
+                android:id="@+id/demo4_target1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/demo4_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#ff0000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/demo4_center2"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@+id/demo4_capture2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/demo4_center2"
+                android:background="#e7e7e7" />
+            <View
+                android:id="@+id/demo4_target2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/demo4_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#00ff00"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/demo4_center3"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@+id/demo4_capture3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/demo4_center3"
+                android:background="#e7e7e7" />
+            <View
+                android:id="@+id/demo4_target3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/demo4_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#0000ff"/>
+        </RelativeLayout>
+
+
+    </TableRow>
+
+</RelativeLayout>
