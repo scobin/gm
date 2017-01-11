@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TableRow
         android:layout_width="match_parent"
@@ -26,7 +27,8 @@
             <View
                 android:id="@+id/demo4_target1"
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -60,7 +62,8 @@
             <View
                 android:id="@+id/demo4_target2"
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -72,6 +75,14 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="#00ff00"/>
+            <TextView
+                android:id="@+id/demo4_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                tools:text="score"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -93,7 +104,8 @@
             <View
                 android:id="@+id/demo4_target3"
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -103,6 +115,7 @@
                 android:id="@+id/demo4_btn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:layout_alignParentBottom="true"
                 android:background="#0000ff"/>
         </RelativeLayout>

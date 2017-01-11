@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 //        Demo2 demo2 = DemoBaseFragment.newInstance(null);
 
-        Demo3Fragment fragment = Demo3Fragment.newInstance(null);
+        Demo4Fragment fragment = Demo4Fragment.newInstance(null);
         ft.add(R.id.main_frame, fragment, fragment.TAG);
         ft.commit();
     }
