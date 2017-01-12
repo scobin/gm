@@ -3,7 +3,7 @@ package com.chengyu.gm2;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -12,7 +12,7 @@ import java.util.TimerTask;
  * Created by chengyu on 2016/12/27.
  */
 public abstract class DemoBaseFragment extends Fragment {
-    protected View mRootView;
+    protected ViewGroup mRootView;
     protected int mCount;
     protected Handler mHandler = new Handler();
     protected Timer mTimer;

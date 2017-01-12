@@ -26,7 +26,7 @@ public class Demo2 extends DemoBaseFragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        mRootView = inflater.inflate(R.layout.fragment_game2, container, false);
+        mRootView = (ViewGroup) inflater.inflate(R.layout.fragment_game2, container, false);
         mRootView.findViewById(R.id.test2_timer_start).setOnClickListener(this);
         mRootView.findViewById(R.id.test2_timer_stop).setOnClickListener(this);
         mTimeText = (TextView) mRootView.findViewById(R.id.test_timer);

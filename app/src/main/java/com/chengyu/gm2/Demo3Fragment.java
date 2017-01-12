@@ -43,7 +43,7 @@ public class Demo3Fragment extends DemoBaseFragment implements View.OnClickListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        mRootView = inflater.inflate(R.layout.fragment_demo3, container, false);
+        mRootView = (ViewGroup) inflater.inflate(R.layout.fragment_demo3, container, false);
         mRootView.findViewById(R.id.demo3_btn1).setOnClickListener(this);
         mRootView.findViewById(R.id.demo3_btn2).setOnClickListener(this);
         mRootView.findViewById(R.id.demo3_btn3).setOnClickListener(this);
