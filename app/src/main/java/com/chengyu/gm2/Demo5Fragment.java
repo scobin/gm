@@ -123,6 +123,7 @@ public class Demo5Fragment extends Fragment implements View.OnClickListener {
                     if (mRow1.getChildCount() < 5) {
                         View child = createChildView(Color.RED);
                         mRow1.addView(child);
+                        mBTN1Count++;
                     }
 
                 }
@@ -135,6 +136,7 @@ public class Demo5Fragment extends Fragment implements View.OnClickListener {
                     if (mRow2.getChildCount() < 5) {
                         View child = createChildView(Color.GREEN);
                         mRow2.addView(child);
+                        mBTN2Count++;
                     }
 
                 }
@@ -147,6 +149,7 @@ public class Demo5Fragment extends Fragment implements View.OnClickListener {
                     if (mRow3.getChildCount() < 5) {
                         View child = createChildView(Color.BLUE);
                         mRow3.addView(child);
+                        mBTN3Count++;
                     }
 
                 }
