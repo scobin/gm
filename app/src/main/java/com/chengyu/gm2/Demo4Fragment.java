@@ -187,6 +187,7 @@ public class Demo4Fragment extends DemoBaseFragment implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.demo4_btn1:
+                Log.d(TAG, "x:" + mTarget1.getX());
                 addFootPrints(mTarget1);
                 if (checkCollision(mCapture1, mTarget1)) {
                     mAnimator1.cancel();
